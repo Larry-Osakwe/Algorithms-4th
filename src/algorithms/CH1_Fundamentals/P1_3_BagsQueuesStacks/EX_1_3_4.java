@@ -25,10 +25,12 @@ public class EX_1_3_4 {
     public static boolean isBalanced(String s) {
         Stack<Character> stack = new Stack<>();
         for (int i = 0; i < s.length(); i++) {
+            //if left variant, push to stack
             if (s.charAt(i) == LEFT_BRACKET) stack.push(LEFT_BRACKET);
             if (s.charAt(i) == LEFT_PARENTHESES) stack.push(LEFT_PARENTHESES);
             if (s.charAt(i) == LEFT_CURLYBRACKET) stack.push(LEFT_CURLYBRACKET);
             
+            //if right variant, check that there is a corresponding left variant
             if (s.charAt(i) == RIGHT_BRACKET)
                 if (stack.isEmpty()) return false;
                 else if (stack.pop() != LEFT_BRACKET) {
@@ -50,9 +52,10 @@ public class EX_1_3_4 {
     }
     
     public static void main(String[] args) {
+        //returns true
         String f = "{([][])}()()";
         StdOut.println(isBalanced(f));
-        
+        //returns false
         String k = "}(){";
         StdOut.println(isBalanced(k));
     }
