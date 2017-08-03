@@ -14,7 +14,7 @@ import edu.princeton.cs.algs4.StdOut;
  *
  * @author Larry Osakwe
  */
-public class EX_1_3_4 {
+public class EX_1_3_04 {
     private static final char LEFT_BRACKET = '[';
     private static final char LEFT_PARENTHESES = '(';
     private static final char LEFT_CURLYBRACKET = '{';
