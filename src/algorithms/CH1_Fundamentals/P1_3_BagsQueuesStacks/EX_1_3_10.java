@@ -33,7 +33,6 @@ public class EX_1_3_10 {
 
     public static void main(String[] args) {
         String input = "( 2 + ( ( 3 + 4 ) * ( 5 * 6 ) ) )";
-        //String input = "A * B + C * D";
         StdOut.println(infixToPostfix(input));
 
     }
