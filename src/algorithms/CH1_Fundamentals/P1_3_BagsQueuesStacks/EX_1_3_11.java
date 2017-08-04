@@ -12,7 +12,7 @@ import edu.princeton.cs.algs4.StdOut;
  *
  * @author Larry Osakwe
  */
-public class EX1_3_11 {
+public class EX_1_3_11 {
 
     public static String EvaluatePostFix(String s) {
 
